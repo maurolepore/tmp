@@ -1,0 +1,11 @@
+on: push
+name: Try my own image 
+jobs:
+  container: rocker/verse
+  runs-on: ubuntu-latest
+  env:
+    MYVAR: myva
+  steps:
+    - name: Query dependencies
+      run: |
+        echo "$MYVAR"
