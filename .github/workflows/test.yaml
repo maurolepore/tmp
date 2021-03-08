@@ -9,3 +9,4 @@ jobs:
     - name: Query dependencies
       run: |
         echo "$MYVAR"
+        echo "Rscript 'row.names(installed.packages())'
