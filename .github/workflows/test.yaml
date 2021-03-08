@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Query installed packages 
         run: |
-          echo "Rscript 'row.names(installed.packages())'"
+          echo "Rscript 'cat(row.names(installed.packages()))'"
