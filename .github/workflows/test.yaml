@@ -4,9 +4,7 @@ jobs:
   my_job:
     container: 2dii/pacta_analysis:latest
     runs-on: ubuntu-latest
-    env:
-      MYVAR: myva
     steps:
-      - name: Query dependencies
+      - name: Query installed packages 
         run: |
           echo "Rscript 'row.names(installed.packages())'
